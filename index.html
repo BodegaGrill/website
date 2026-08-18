@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bodega Grill • Fruit • Deli | Opening Soon</title>
+  <meta name="description" content="Bodega Grill • Fruit • Deli — Opening soon at 4861 E 9 Mile Rd, Warren, MI 48091.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --red:#e50914; --gold:#f4c400; --black:#080808; --cream:#f5f1e8; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--black); color:white; font-family:Inter,Arial,sans-serif; }
+    .hero { min-height:92vh; position:relative; display:flex; align-items:center; justify-content:center; text-align:center; overflow:hidden; }
+    .hero::before { content:""; position:absolute; inset:0; background:linear-gradient(90deg,rgba(0,0,0,.84),rgba(0,0,0,.42),rgba(0,0,0,.84)), url("storefront.jpg") center/cover; filter:saturate(1.05); }
+    .hero::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.15),#080808 96%); }
+    .hero-content { position:relative; z-index:2; max-width:950px; padding:40px 22px; }
+    .eyebrow { color:var(--gold); font-weight:800; letter-spacing:4px; text-transform:uppercase; font-size:.9rem; }
+    h1 { font-family:Anton,Impact,sans-serif; font-size:clamp(4rem,12vw,9rem); line-height:.85; margin:18px 0 8px; text-transform:uppercase; text-shadow:5px 5px 0 var(--red); }
+    .tagline { font-size:clamp(1rem,2.4vw,1.45rem); font-weight:700; letter-spacing:2px; }
+    .opening { display:inline-block; margin:28px 0; padding:14px 26px; background:var(--red); border:2px solid white; font-family:Anton,Impact,sans-serif; font-size:clamp(1.8rem,4vw,3rem); letter-spacing:2px; transform:skew(-4deg); }
+    .address { font-size:1.05rem; font-weight:700; margin:8px 0 24px; }
+    .btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+    .btn { display:inline-block; padding:14px 24px; border-radius:4px; text-decoration:none; color:white; font-weight:800; border:2px solid white; }
+    .btn.primary { background:var(--gold); color:#111; border-color:var(--gold); }
+    nav { position:absolute; z-index:5; top:0; left:0; right:0; display:flex; justify-content:space-between; align-items:center; padding:20px 6%; }
+    .brand { font-weight:900; letter-spacing:1px; }
+    nav a { color:white; text-decoration:none; font-weight:800; margin-left:22px; }
+    section { padding:80px 6%; }
+    .about { background:#111; display:grid; grid-template-columns:1fr 1fr; gap:45px; align-items:center; }
+    .about img { width:100%; border-radius:10px; border:2px solid #333; }
+    .section-title { font-family:Anton,Impact,sans-serif; font-size:3.5rem; margin:0 0 15px; text-transform:uppercase; }
+    .red { color:var(--red); }
+    .menu-section { background:var(--cream); color:#111; text-align:center; }
+    .menu-section p { max-width:650px; margin:0 auto 28px; }
+    .menu-card { max-width:900px; margin:auto; background:white; padding:12px; border-radius:10px; box-shadow:0 20px 60px rgba(0,0,0,.25); }
+    .menu-card img { width:100%; display:block; }
+    footer { padding:38px 6%; text-align:center; background:#050505; border-top:3px solid var(--red); }
+    .social { margin-top:12px; font-weight:700; }
+    @media(max-width:760px){ .about{grid-template-columns:1fr;} nav{padding:16px 5%;} nav a{margin-left:10px;font-size:.85rem;} .hero{min-height:88vh;} section{padding:60px 5%;} }
+  </style>
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav>
+      <div class="brand">BODEGA GRILL • FRUIT • DELI</div>
+      <div><a href="#home">Home</a><a href="#menu">Menu</a><a href="#location">Location</a></div>
+    </nav>
+    <div class="hero-content">
+      <div class="eyebrow">Warren, Michigan</div>
+      <h1>Bodega</h1>
+      <div class="tagline">GRILL • FRUIT • DELI</div>
+      <div class="opening">OPENING SOON</div>
+      <div class="address">4861 E 9 Mile Rd, Warren, MI 48091</div>
+      <div class="btns">
+        <a class="btn primary" href="#menu">VIEW MENU</a>
+        <a class="btn" href="#location">GET DIRECTIONS</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="about" id="location">
+    <div>
+      <h2 class="section-title">Chill Inside.<br><span class="red">Loud Flavor.</span></h2>
+      <p>Bodega Grill • Fruit • Deli is getting ready to bring bold food, fresh drinks, and a new neighborhood spot to Warren.</p>
+      <p><strong>Opening soon at:</strong><br>4861 E 9 Mile Rd<br>Warren, MI 48091</p>
+      <a class="btn" style="background:var(--red)" href="https://www.google.com/maps/search/?api=1&query=4861%20E%209%20Mile%20Rd%2C%20Warren%2C%20MI%2048091" target="_blank" rel="noopener">GET DIRECTIONS</a>
+    </div>
+    <img src="storefront.jpg" alt="Bodega Grill storefront at 4861 E 9 Mile Rd in Warren, Michigan">
+  </section>
+
+  <section class="menu-section" id="menu">
+    <h2 class="section-title">Our <span class="red">Menu</span></h2>
+    <p>Check out the full Bodega Grill • Fruit • Deli menu below.</p>
+    <div class="menu-card"><img src="menu.png" alt="Bodega Grill menu"></div>
+  </section>
+
+  <footer>
+    <strong>BODEGA GRILL • FRUIT • DELI</strong>
+    <div class="social">4861 E 9 Mile Rd, Warren, MI 48091</div>
+    <div class="social">Follow us: @BodegaGrillFruitDeli</div>
+    <div style="margin-top:12px">OPENING SOON</div>
+  </footer>
+</body>
+</html>
